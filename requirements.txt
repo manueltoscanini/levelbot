@@ -1,4 +1,1 @@
-git add requirements.txt
-git add level_bot.py
-git commit -m "Use GitHub Secrets"
-git push
+request
