@@ -71,7 +71,7 @@ print("\nMEJOR IDA")
 print("Fecha:", mejor["date"])
 print("Precio:", mejor["price"])
 
-if mejor["price"] < 150:
+if mejor["price"] < 500:
     telegram(
         f"✈️ IDA BARATA\n"
         f"Fecha: {mejor['date']}\n"
@@ -91,7 +91,7 @@ print("\nMEJOR VUELTA")
 print("Fecha:", mejor_vuelta["date"])
 print("Precio:", mejor_vuelta["price"])
 
-if mejor_vuelta["price"] < 150:
+if mejor_vuelta["price"] < 500:
     telegram(
         f"🔁 VUELTA BARATA\n"
         f"Fecha: {mejor_vuelta['date']}\n"
