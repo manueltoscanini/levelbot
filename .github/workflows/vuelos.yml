@@ -2,7 +2,7 @@ name: Buscar Vuelos Baratos
 
 on:
   schedule:
-    - cron: '0 10 * * *'   # Todos los días a las 10:00 UTC (07:00 Buenos Aires)
+  - cron: '*/5 * * * *'     # Todos los días a las 10:00 UTC (07:00 Buenos Aires)
   workflow_dispatch:         # También permite correrlo manualmente desde GitHub
 
 jobs:
@@ -26,4 +26,3 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
         run: python vuelos.py
-        
